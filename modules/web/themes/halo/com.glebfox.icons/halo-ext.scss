@@ -1,5 +1,7 @@
 @import "fonts/vaadin-icons/vaadin-icons";
 
 @mixin com_glebfox_icons-halo-ext {
-
+  img.v-icon {
+    height: $v-font-size;
+  }
 }
