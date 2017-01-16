@@ -3,5 +3,6 @@
 @mixin com_glebfox_icons-halo-ext {
   img.v-icon {
     height: $v-font-size;
+    margin-bottom: 2px;
   }
 }
