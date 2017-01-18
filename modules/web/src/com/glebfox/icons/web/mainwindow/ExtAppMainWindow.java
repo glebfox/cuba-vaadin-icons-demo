@@ -1,9 +1,8 @@
 package com.glebfox.icons.web.mainwindow;
 
-import com.haulmont.cuba.core.global.AppBeans;
+import com.glebfox.icons.web.utils.ComponentUtils;
 import com.haulmont.cuba.gui.components.mainwindow.LogoutButton;
 import com.haulmont.cuba.gui.components.mainwindow.NewWindowButton;
-import com.haulmont.cuba.gui.theme.ThemeConstantsManager;
 import com.haulmont.cuba.web.app.mainwindow.AppMainWindow;
 
 import javax.inject.Inject;
@@ -25,14 +24,10 @@ public class ExtAppMainWindow extends AppMainWindow {
     }
 
     private void initLogoutButton() {
-        ThemeConstantsManager thCM = AppBeans.get(ThemeConstantsManager.NAME);
-        String icon = thCM.getThemeValue("mainwindow.buttons.LogoutButton.icon");
-        logoutButton.setIcon(icon);
+        ComponentUtils.setIconFromThemeConstant(logoutButton, "mainwindow.buttons.LogoutButton.icon");
     }
 
     private void initNewWindowButton() {
-        ThemeConstantsManager thCM = AppBeans.get(ThemeConstantsManager.NAME);
-        String icon = thCM.getThemeValue("mainwindow.buttons.NewWindowButton.icon");
-        newWindowButton.setIcon(icon);
+        ComponentUtils.setIconFromThemeConstant(newWindowButton, "mainwindow.buttons.NewWindowButton.icon");
     }
 }

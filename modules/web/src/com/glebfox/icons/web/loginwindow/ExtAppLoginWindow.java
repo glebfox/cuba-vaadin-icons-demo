@@ -1,5 +1,6 @@
 package com.glebfox.icons.web.loginwindow;
 
+import com.glebfox.icons.web.utils.ComponentUtils;
 import com.haulmont.cuba.core.global.AppBeans;
 import com.haulmont.cuba.gui.components.Action;
 import com.haulmont.cuba.gui.theme.ThemeConstantsManager;
@@ -20,8 +21,6 @@ public class ExtAppLoginWindow extends AppLoginWindow {
     }
 
     private void initSubmitAction() {
-        ThemeConstantsManager thCM = AppBeans.get(ThemeConstantsManager.NAME);
-        String icon = thCM.getThemeValue("loginwindow.actions.Submit.icon");
-        submit.setIcon(icon);
+        ComponentUtils.setIconFromThemeConstant(submit, "loginwindow.actions.Submit.icon");
     }
 }
