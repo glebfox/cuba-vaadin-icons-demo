@@ -9,4 +9,6 @@
             template="com/glebfox/icons/web/app/security/user/browse/ext-user-browse.xml"/>
     <screen id="sec$Group.browse"
             template="com/glebfox/icons/web/app/security/group/browse/ext-group-browse.xml"/>
+    <screen id="sec$Constraint.edit"
+            template="com/glebfox/icons/web/app/security/constraint/edit/ext-constraint-edit.xml"/>
 </screen-config>

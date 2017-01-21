@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        class="com.glebfox.icons.web.app.security.constraint.edit.ExtConstraintEditor"
+        extends="/com/haulmont/cuba/gui/app/security/constraint/edit/constraint-edit.xml"
+        messagesPack="com.glebfox.icons.web.app.security.constraint.edit">
+    <layout>
+        <scrollBox id="scrollBox"
+                   height="100%">
+            <hbox id="windowActions">
+                <button id="windowCommit"
+                        icon="theme://constraint.edit.buttons.WindowCommit.icon"/>
+                <button id="windowClose"
+                        icon="theme://constraint.edit.buttons.WindowClose.icon"/>
+            </hbox>
+        </scrollBox>
+    </layout>
+</window>
