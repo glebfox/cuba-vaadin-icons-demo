@@ -7,4 +7,6 @@
             template="com/glebfox/icons/web/loginwindow/ext-loginwindow.xml"/>
     <screen id="sec$User.browse"
             template="com/glebfox/icons/web/app/security/user/browse/ext-user-browse.xml"/>
+    <screen id="sec$Group.browse"
+            template="com/glebfox/icons/web/app/security/group/browse/ext-group-browse.xml"/>
 </screen-config>
