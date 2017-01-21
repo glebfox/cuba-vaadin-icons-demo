@@ -6,15 +6,14 @@ import com.haulmont.cuba.gui.components.Action;
 import com.haulmont.cuba.gui.theme.ThemeConstantsManager;
 
 import javax.inject.Inject;
-import java.util.Map;
 
 public class ExtRoleBrowser extends RoleBrowser {
     @Inject
     private ThemeConstantsManager themeCM;
 
     @Override
-    public void init(Map<String, Object> params) {
-        super.init(params);
+    public void ready() {
+        super.ready();
 
         initAssignToUsersAction();
         initExportAction();

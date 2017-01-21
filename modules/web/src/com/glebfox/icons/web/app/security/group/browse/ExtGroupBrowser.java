@@ -6,7 +6,6 @@ import com.haulmont.cuba.gui.components.Action;
 import com.haulmont.cuba.gui.theme.ThemeConstantsManager;
 
 import javax.inject.Inject;
-import java.util.Map;
 
 public class ExtGroupBrowser extends GroupBrowser {
 
@@ -14,8 +13,8 @@ public class ExtGroupBrowser extends GroupBrowser {
     private ThemeConstantsManager themeCM;
 
     @Override
-    public void init(Map<String, Object> params) {
-        super.init(params);
+    public void ready() {
+        super.ready();
 
         initExportAction();
         initImportUpload();
