@@ -5,4 +5,10 @@
     height: $v-font-size;
     margin-bottom: 2px;
   }
+
+  .v-app-loading::before {
+    width: 32px;
+    height: 32px;
+    background: url(../images/rolling.svg) no-repeat 50%;
+  }
 }
