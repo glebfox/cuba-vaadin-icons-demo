@@ -1,0 +1,1 @@
+web: cd ./build/tomcat/bin && export 'JAVA_OPTS=-Dport.http=$PORT' && ./catalina.sh run
